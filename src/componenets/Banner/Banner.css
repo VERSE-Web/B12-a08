@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap');
 
-
-.inter-font {
-    font-family: "Inter", sans-serif;
-}
-
 .gradientText {
     background: linear-gradient(150deg,rgba(127, 78, 232, 1) 0%, rgba(143, 91, 236, 1) 50%, rgba(159, 105, 240, 1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+}
+
+.centerItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.centerText {
+    text-align: center;
 }

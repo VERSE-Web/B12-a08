@@ -34,17 +34,17 @@ const Navbar = ({ location }) => {
         <div className="flex items-center justify-between h-15 px-6 bg-white inter-font ">
             <div className="flex items-center gap-3">
                 <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-                <span className="font-bold text-m text-[#6A34E5]">HERO.IO</span>
+                <span className="font-bold text-m gradientText">HERO.IO</span>
             </div>
 
             <ul className="flex items-center gap-7 list-none">
-                <li className="text-m cursor-pointer inter-font" ref={Home} >
+                <li className="text-sm cursor-pointer inter-font" ref={Home} >
                     <Link to="/">Home</Link>
                 </li>
-                <li className="text-m cursor-pointer text-black inter-font" ref={Apps}>
+                <li className="text-sm cursor-pointer text-black inter-font" ref={Apps}>
                     <Link to="/apps">Apps</Link>
                 </li>
-                <li className="text-m cursor-pointer text-black inter-font" ref={Installs} >
+                <li className="text-sm cursor-pointer text-black inter-font" ref={Installs} >
                     <Link to="/Installs">Installation</Link>
                 </li>
             </ul>

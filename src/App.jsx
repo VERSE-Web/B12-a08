@@ -3,7 +3,6 @@ import logo from "./Assets/logo.png"
 import "./App.css";
 import Navbar from "./componenets/Navbar/Navbar";
 import { Outlet, useLocation } from "react-router";
-import Banner from "./componenets/Banner/Banner";
 
 export default function App() {
 
@@ -14,9 +13,6 @@ export default function App() {
       <header>
         <Navbar location={location} />
       </header>
-      <div>
-        <Banner />
-      </div>
       <Outlet />
     </div>
   );
