@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "./Assets/logo.png"
 import "./App.css";
+import Navbar from "./componenets/Navbar/Navbar";
+import { Outlet, useLocation } from "react-router";
+import Banner from "./componenets/Banner/Banner";
 
 export default function App() {
-  return (
-    <div className="container">
-      <img src={logo} alt="Atomos logo" width="250" />
 
-      <h1>Running Atomos</h1>
-      <p>
-        Atomos was inspired by Vite. It was made with Vite in an effort to see
-        less of Vite's bloated file system.
-      </p>
+  const location = useLocation()
+
+  return (
+    <div className="">
+      <header>
+        <Navbar location={location} />
+      </header>
+      <div>
+        <Banner />
+      </div>
+      <Outlet />
     </div>
   );
 }
