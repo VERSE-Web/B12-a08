@@ -3,7 +3,7 @@
 
 .inter-font {
     font-family: "Inter", sans-serif;
-}
+}   
 
 .gradientText {
     background: linear-gradient(150deg,rgba(127, 78, 232, 1) 0%, rgba(143, 91, 236, 1) 50%, rgba(159, 105, 240, 1) 100%);

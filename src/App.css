@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -9,6 +10,5 @@
     scrollbar-width: none;
 }
 
-body {
-  background-color: #F5F5F5;
-}
+
+
