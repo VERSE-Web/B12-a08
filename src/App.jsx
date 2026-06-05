@@ -9,13 +9,24 @@ export default function App() {
 
   const location = useLocation()
 
-  return (
-    <div className=''>
-      <header>
-        <Navbar location={location} />
-      </header>
-      <Outlet />
-      <Footer />
-    </div>
-  );
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      document.title = "Hero.IO || Home";
+    } else if (location.pathname === "/apps") {
+      document.title = "Hero.IO || Apps";
+    } else {
+      document.title = "Hero.IO || Installs";
+    }
+  }, [location]);
+
+return (
+  <div>
+    <header>
+      <Navbar location={location} />
+    </header>
+    <Outlet />
+    <Footer />
+  </div>
+);
 }

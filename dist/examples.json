@@ -1,0 +1,12 @@
+{
+  "_note": "delete later",
+  "project": "Atomos",
+  "description": "Minimal React environment inspired by Vite",
+  "version": "1.0.0",
+  "features": [
+    "Minimal file structure",
+    "Fast development",
+    "Simple imports",
+    "Clean setup"
+  ]
+}
